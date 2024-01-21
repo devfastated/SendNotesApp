@@ -34,9 +34,17 @@ new class extends Component
                         {{ __('Dashboards') }}
                     </x-nav-link>
                 </div>
+
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="route('student')" :active="request()->routeIs('student')" wire:navigate>
-                        {{ __('Student') }}
+                        {{ __('Faculty Office') }}
+                    </x-nav-link>
+                </div>
+                
+
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="route('documents')" :active="request()->routeIs('documents')" wire:navigate>
+                        {{ __('Documents') }}
                     </x-nav-link>
                 </div>
             

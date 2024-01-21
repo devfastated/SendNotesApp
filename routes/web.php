@@ -23,8 +23,14 @@ Route::view('student', 'livewire.student')
     ->middleware(['auth', 'verified'])
     ->name('student');
 
+Route::view('documents', 'livewire.documents')
+    ->middleware(['auth', 'verified'])
+    ->name('documents');
+
+
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
+
 
 require __DIR__.'/auth.php';
