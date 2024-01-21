@@ -12,6 +12,11 @@
                     {{ __("You're logged in!") }}
                 </div>
             </div>
+
+            <div>
+                @livewire("clicker")
+            </div>
+
         </div>
     </div>
 </x-app-layout>

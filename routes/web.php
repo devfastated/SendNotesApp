@@ -19,6 +19,10 @@ Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
 
+Route::view('student', 'livewire.student')
+    ->middleware(['auth', 'verified'])
+    ->name('student');
+
 Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
